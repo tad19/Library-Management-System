@@ -1,0 +1,9 @@
+body{
+    display: block;
+    text-align: center;
+    color: black;
+    background-color: whitesmoke;
+}
+input{
+    margin-bottom:20px;
+}
