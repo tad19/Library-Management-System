@@ -1,0 +1,90 @@
+body{
+    display: block;
+    color: black;
+    background-color: #dcdcdc;
+}
+h1{
+    text-align: center;
+}
+.browse-btn{
+    display: block;
+    width: fit-content;
+    margin: 0 auto;
+    padding: 0.7rem 1rem;
+    background-color: #009879;
+    color: black;
+    text-decoration: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
+.logout-btn{
+    display: block;
+    width: fit-content;
+    margin: 0 auto;
+    padding: 0.7rem 1rem;
+    background-color: red;
+    color: black;
+    text-decoration: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
+.table-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+}
+.dashboard-tables{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    width: 90%;
+    max-width: 75rem;
+    margin: 2rem auto;
+}
+.table-card{
+    width: 35rem;
+    height: 32rem;
+    background: white;
+    padding: 1.25rem;
+    border-radius: 0.75rem;
+    box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.1);
+    min-width: 0;
+
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+.table-scroll{
+    max-height: 27.5rem;
+    overflow-y: auto;
+    overflow-x: auto;
+}
+.table{
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 1rem;
+    margin: 1.25rem 0;
+}
+th, td{
+    padding: 0.75rem 1rem;
+    text-align: left;
+    border-bottom: 0.0625rem solid #dddddd; 
+}
+th{
+    background-color: #009879;
+    color: #ffffff;
+}
+tr:nth-child(even){
+    background-color: #f3f3f3;
+}
+.table-card table{
+    width: 100%;
+    height: 100%;
+    border-collapse: collapse;
+    margin: 0;
+}
+.table-card th, 
+.table-card td{
+    padding: 1rem 1.25rem;
+}
