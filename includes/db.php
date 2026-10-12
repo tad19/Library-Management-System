@@ -1,10 +1,10 @@
 <?php
 
-$host = "sql110.infinityfree.com";
+$host = "localhost";
 $port = 3306;
-$username = "if0_43150362";
+$username = "root";
 $password = "tadiruy123";
-$database = "if0_43150362_LibraryManagementSystem";
+$database = "libsys_db";
 
 $conn = new mysqli($host, $username, $password, $database, $port);
 
