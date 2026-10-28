@@ -26,6 +26,7 @@ $sql = "SELECT borrowings.id, books.title, borrowings.borrowed_at, borrowings.re
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>User Dashboard</title>
     <link rel="stylesheet" href="../css/user_dashboard.css">
+    <link rel="stylesheet" href="../css/logout.css">
     
 </head>
 <body>
@@ -34,7 +35,20 @@ $sql = "SELECT borrowings.id, books.title, borrowings.borrowed_at, borrowings.re
 
     <a href="browse_books.php" class="browse-btn">Browse Books</a>
 <br>
-    <a href="../logout.php" class="logout-btn">logout</a>
+     <button type="button" class="logout-btn" onclick="return confirmLogout()">Logout</button>
+    
+    <div id="logoutPopup" class="popup-overlay">
+        <div class="popup-box">
+            <h2>Log Out?</h2>
+            <p>Are you sure you want to log out of your account?</p>
+
+            <div class="popup-buttons">
+                <button type="button" class="cancel-btn" onclick="hideLogoutPopup()">Cancel</button>
+
+                <a href="../logout.php" class="confirm-logout">Yes, log out</a>
+            </div>
+        </div>
+    </div>
 <br>
 
 <div class="dashboard-tables">
@@ -115,5 +129,6 @@ $sql = "SELECT borrowings.id, books.title, borrowings.borrowed_at, borrowings.re
 </div>
 </section>
 </div>
+        <script src="../js/logout.js"></script>
 </body>
 </html>

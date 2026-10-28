@@ -1,8 +1,3 @@
-function confirmLogout(){
-
-    return confirm("Are you sure you want to logout?");
-}
-
 function confirmDelete(){
     
     return confirm("Are you sure you want to delete this book?");
