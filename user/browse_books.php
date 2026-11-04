@@ -15,10 +15,13 @@ $result = $conn->query($sql);
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Browse Books</title>
+        <link rel="stylesheet" href="../css/browse_book.css">
 
     </head>
     <body>
 
+        <h2>Browse Books</h2>
+        
         <form action="search_books.php" method="GET">
             <input type="text" name="search" placeholder="Search books...">
             <button type="submit">Search</button>
