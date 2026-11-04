@@ -21,9 +21,9 @@ $result = $conn->query($sql);
     <body>
 
         <h2>Browse Books</h2>
-        
-        <form action="search_books.php" method="GET">
-            <input type="text" name="search" placeholder="Search books...">
+
+        <form action="search_book.php" method="GET">
+            <input type="text" name="search" placeholder="Search book...">
             <button type="submit">Search</button>
         </form>
 
