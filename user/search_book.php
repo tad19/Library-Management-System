@@ -1,5 +1,5 @@
-
 <?php
+
 session_start();
 
 include "../includes/db.php";
@@ -12,11 +12,8 @@ $sql = "SELECT * FROM books
         OR category LIKE ?";
 
 $stmt = $conn->prepare($sql);
-
 $keyword = "%" . $search . "%";
-
 $stmt->bind_param("sss", $keyword, $keyword, $keyword);
-
 $stmt->execute();
 
 $result = $stmt->get_result();

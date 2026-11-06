@@ -34,22 +34,6 @@ $sql = "SELECT borrowings.id, books.title, borrowings.borrowed_at, borrowings.re
 <h1>WELCOME, <?php echo $_SESSION['fullname']; ?>!</h1>
 
     <a href="browse_books.php" class="browse-btn">Browse Books</a>
-<br>
-     <button type="button" class="logout-btn" onclick="return confirmLogout()">Logout</button>
-    
-    <div id="logoutPopup" class="popup-overlay">
-        <div class="popup-box">
-            <h2>Log Out?</h2>
-            <p>Are you sure you want to log out of your account?</p>
-
-            <div class="popup-buttons">
-                <button type="button" class="cancel-btn" onclick="hideLogoutPopup()">Cancel</button>
-
-                <a href="../logout.php" class="confirm-logout">Yes, log out</a>
-            </div>
-        </div>
-    </div>
-<br>
 
 <div class="dashboard-tables">
 <section class="table-card">
@@ -129,6 +113,22 @@ $sql = "SELECT borrowings.id, books.title, borrowings.borrowed_at, borrowings.re
 </div>
 </section>
 </div>
+
+<button type="button" class="logout-btn" onclick="return confirmLogout()">Logout</button>
+    
+    <div id="logoutPopup" class="popup-overlay">
+        <div class="popup-box">
+            <h2>Log Out?</h2>
+            <p>Are you sure you want to log out of your account?</p>
+
+            <div class="popup-buttons">
+                <button type="button" class="cancel-btn" onclick="hideLogoutPopup()">Cancel</button>
+
+                <a href="../logout.php" class="confirm-logout">Yes, log out</a>
+            </div>
+        </div>
+    </div>
+    
         <script src="../js/logout.js"></script>
 </body>
 </html>
