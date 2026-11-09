@@ -88,3 +88,36 @@ tr:nth-child(even){
 .table-card td{
     padding: 1rem 1.25rem;
 }
+
+@media (max-width: 30rem) {
+    h1{
+        font-size: 1.5rem;
+    }
+    h2{
+        font-size: 1.25rem;
+    }
+    .browse-btn{
+        font-size: 0.9rem;
+        padding: 0.6rem 0.9rem;
+    }
+    .book-table-container{
+        gap: 1rem;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .dashboard-tables {
+        grid-template-columns: 1fr;
+        width: 95%;
+        gap: 1rem;
+    }
+    .table-card {
+        width: 100%;
+        padding: 1rem;
+    }
+    .table-scroll {
+        max-height: 25rem;
+        overflow-x: auto;
+        overflow-y: auto;
+    }
+}

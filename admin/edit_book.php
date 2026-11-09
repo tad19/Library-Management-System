@@ -55,6 +55,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/edit_book.css">
 
     <title>Edit Book</title>
 </head>
@@ -63,30 +64,41 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
 
     <h1>Edit Book</h1>
 
-    <form method="POST">
+    <form method="POST" class="form-container">
 
         <input type="hidden" name="id" value="<?= $book['id'] ?>">
 
-        <p>Title:
-            <input type="text" name="title" value="<?= $book['title'] ?>" required>
-        </p>
+        <div class="input-row">
+        <label>Title</label>
+        <span>:</span>
+        <input type="text" name="title" value="<?= $book['title'] ?>" required>
+        </div>
 
-        <p>Author: 
-            <input type="text" name="author" value="<?= $book['author'] ?>" required>
-        </p>
+        <div class="input-row">
+        <label>Author</label>
+        <span>:</span> 
+        <input type="text" name="author" value="<?= $book['author'] ?>" required>
+        </div>
 
-        <p>Category:
-            <input type="text" name="category" value="<?= $book['category'] ?>" required>
-        </p>
+        <div class="input-row">
+        <label>Category</label>
+        <span>:</span>
+        <input type="text" name="category" value="<?= $book['category'] ?>" required>
+        </div>
 
-        <p>Available:
-            <input type="number" name="available" value="<?= $book['available'] ?>" required>
-        </p>
+        <div class="input-row">
+        <label>Available</label>
+        <span>:</span>
+        <input type="number" name="available" value="<?= $book['available'] ?>" required>
+        </div>
 
+        <div class="button-container">
         <button type="submit">Update Book</button>
         
-        <a href="dashboard.php"><button type="button">Return</button></a>
-
+        <a href="dashboard.php">
+            <button type="button">Return</button>
+        </a>
+        </div>
     </form>
 
 </body>
